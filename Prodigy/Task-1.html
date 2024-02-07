@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="Task-1a.css">
+    <!-- Ensure that the Font Awesome link is accessible -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <section class="header">
+        <nav>
+            <!-- Use appropriate alt text for images -->
+            <a href="Task-1.html"><img src="https://mitwpu.edu.in/assets/frontend/images/mit_logo.png" alt="MIT Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- Correct the onclick function name -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">COURSES</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <!-- Correct the onclick function name -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>MIT World Peace University</h1>
+            <p>Empowering the youth of today to become the leaders of tomorrow</p>
+            <a href="#" class="hero-btn">Enroll Now</a>
+        </div>
+    </section>
+    
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <div class="row">
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Choose from a wide array of multidisciplinary undergraduate programmes and embark on your professional journey at MIT-WPU.</p>
+            </div>
+            <div class="course-col">
+                <h3>Diplomas and Certifications</h3>
+                <p>Enrich your learning or bridge the gap between different phases of your academic study through the various diplomas and certification programmes offered at MIT-WPU.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Augment your proficiencies and add value to your knowledge by choosing from a diverse range of postgraduate programmes.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>MIT-WPU, with its robust and enduring research infrastructure, has evolved into an institution of uncommon scholarly excellence and distinct academic character that inspires and nurtures cross-disciplinary research, encouraging discoveries that have global impact.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="https://www.collegebatch.com/static/clg-gallery/mit-world-peace-university-pune-224904.jpg" alt="Campus Image 1">
+                <div class="layer">
+                    <h3>PUNE</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="https://img.jagranjosh.com/images/2022/December/16122022/MIT-World-Peace-University-Pune-Campus-View-1.png" alt="Campus Image 2">
+                <div class="layer">
+                    <h3>PUNE</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="https://mitwpu.edu.in/uploads/images/645b8c1a04a241683721242.jpg" alt="Campus Image 3">
+                <div class="layer">
+                    <h3>PUNE</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Other sections would follow similar structure -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <!-- Ensure that the path to Task-1b.js is correct -->
+    <script src="Task-1b.js"></script>
+
+</body>
+</html>
